@@ -1,10 +1,7 @@
-import os
 import google.generativeai as genai
 from youtube_transcript_api import YouTubeTranscriptApi
 from dotenv import load_dotenv
 load_dotenv()
-
-#genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 Prompt = """You are a highly intelligent and concise YouTube video summarizer.
 Your task is to assist users by summarizing YouTube videos effectively.
