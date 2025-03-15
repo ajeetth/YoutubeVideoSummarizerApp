@@ -2,7 +2,7 @@ import streamlit as st
 from llm_utils import (extract_transcript, generate_summary, Prompt)
 
 st.title("Welcome to YouTube video Summarizer App!")
-st.subheader("powered by gemini-pro")
+st.subheader("powered by gemini-2.0")
 youtube_link = st.text_input("Paste the YouTube video link here : ")
 
 if youtube_link:
