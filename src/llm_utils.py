@@ -41,8 +41,8 @@ def generate_summary(transcript, prompt):
     Returns:
         str: The generated summary text.
     Note:
-        This function uses the Gemini-Pro generative model to generate content.
+        This function uses the models/gemini-2.0-flash-thinking-exp-01-21 generative model to generate content.
     """
-    model = genai.GenerativeModel('gemini-pro')
+    model = genai.GenerativeModel('models/gemini-2.0-flash-thinking-exp-01-21')
     response = model.generate_content(prompt+transcript)
     return response.text
